@@ -35,12 +35,6 @@ console.log(doc)
 doc.style.background = "white"
 
 //access particular elements
-const nav = document.querySelector('#navbar')
-console.log(nav)//just to cross check
-
-nav.innerHTML = "Data Management -Something interesting" //accessed the content in it which is replaced by this text
-nav.style.fontsize = "100px"
-nav.style.fontWeight = "bold"
 
 const sidebar = document.querySelector('#sidebar')
 
@@ -79,7 +73,7 @@ function dosomething(){
 let p = document.createElement("p")
 
 //fill that p element with some text
-let inputText = input.value
+let inputext = input.value
     p.innerHTML += inputText
     console.log(inputText)
     

@@ -1,22 +1,25 @@
 <!-- the script is where the js code goes -->
-<script>
+<script setup>
 import { ref } from "vue" // you need this to use ref()
 
+//Ner reference variable
+let user = ref("Farida")
 
 </script>
+
 
 
 
 <!-- the template is where the html code goes -->
 <template>
  <div id="navbar" class="container">  
-        <div id="title">My Personal website</div>
+        <div id="title">Data Management 02 {{ user }}</div>
        
     </div>
 
     <div id="flex">
 
-        <div id="sidebar" class="container"> Input </div>
+        <div id="sidebar" class="container"> Input</div>
 
         <div id="main" class="container"> Output </div>
     </div>
