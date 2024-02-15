@@ -4,8 +4,16 @@ import { ref } from "vue" // you need this to use ref()
 
 //Ner reference variable
 let user = ref("Farida")
+let computername = ref("Dendron")
+
+//define function
+function say(message) {
+  alert(message)
+}
+
 
 </script>
+
 
 
 
@@ -13,15 +21,26 @@ let user = ref("Farida")
 <!-- the template is where the html code goes -->
 <template>
  <div id="navbar" class="container">  
-        <div id="title">Data Management 02 {{ user }}</div>
+        <div id="title">Testing Computer Skills of {{ computername }}</div>
        
     </div>
 
     <div id="flex">
 
-        <div id="sidebar" class="container"> Input</div>
+        <div id="sidebar" class="container"> Greeting you
+            
 
-        <div id="main" class="container"> Output </div>
+            <div><button @click="say('hello')">Hola</button></div>
+        </div>
+
+        <div id="main" class="container"> Bidding Farewell
+            
+           <div> <button @click="say('bye')">Adios</button></div>
+
+        </div>
+   
+   
+   
     </div>
 
 
@@ -37,6 +56,7 @@ html{
     
     background-color: rgb(59, 59, 59); 
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
